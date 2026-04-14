@@ -1,9 +1,30 @@
+@media (max-width: 768px) {
+    /* CSS som gäller när skärmen är 768px eller mindre */
+    .card {
+        border-color: red;
+    }
+}
+
+.border { border: 1px solid black; }
+.bg { background-color: grey; }
+
 .site-head{
     display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+
+  font-size: var(--step-2);
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  border: 1px solid black;
+
+  padding: 1rem;
 }
+
 .nav-list{
     list-style: none;
   display: flex;
@@ -11,4 +32,33 @@
 
   padding: 0;
   margin: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-areas: "hero";
+  place-items: center;
+  max-height: 60vh;
+  background-color:aquamarine;
+  color:black;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.hero-content h1 {
+  font-size: var(--step-7);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+.hero-content h2 {
+  font-size: var(--step-4);
+}
+
+.hero-image {
+  max-height: 80vh;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
 }
