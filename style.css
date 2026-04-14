@@ -4,18 +4,20 @@
         border-color: red;
     }
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
 .site-head{
     display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-  font-size: var(--step-2);
-  text-transform: uppercase;
-  font-weight: 600;
+    text-transform: uppercase;
+    font-weight: 600;
 
-  color: var(--color-light);
-  background-color: var(--color-dark);
   border: 1px solid black;
 
   padding: 1rem;
@@ -31,7 +33,7 @@
 }
 
 .hero {
-  display: flex;
+  display: grid;
   grid-template-areas: "hero";
   place-items: center;
   max-height: 60vh;
@@ -42,37 +44,35 @@
 }
 
 .hero-content-h1 {
-    font-size: 600;
+    font-size: 2rem;
     font-weight: 800;
 }
 
-
+.cards{
+    display: flex;
+    flex-direction: column;
+}
 .card-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding: 1rem;
 
 }
-
 .card {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 1px solid black;
     border-radius: 20px;
-
     max-width: 30%;
-
     background-color: lightgray;
 
 }
-
 .card svg{
     background-color: rgb(126, 125, 125);
     padding: 7px;
     border-radius: 20px;
+    display: flex;
     
 }
 
