@@ -45,15 +45,11 @@
   border: 1px solid black;
 }
 
-.hero-content h1 {
-  font-size: var(--step-7);
-  font-weight: 800;
-  text-transform: uppercase;
-  color: var(--color-secondary);
+.hero-content-h1 {
+    font-size: 600;
+    font-weight: 800;
 }
-.hero-content h2 {
-  font-size: var(--step-4);
-}
+.hero-content h2 
 
 .hero-image {
   max-height: 80vh;
@@ -62,3 +58,4 @@
   object-fit: cover;
   object-position: center;
 }
+
