@@ -4,10 +4,6 @@
         border-color: red;
     }
 }
-
-.border { border: 1px solid black; }
-.bg { background-color: grey; }
-
 .site-head{
     display: flex;
   flex-wrap: wrap;
@@ -35,7 +31,7 @@
 }
 
 .hero {
-  display: grid;
+  display: flex;
   grid-template-areas: "hero";
   place-items: center;
   max-height: 60vh;
@@ -49,31 +45,45 @@
     font-size: 600;
     font-weight: 800;
 }
-.hero-content h2 
 
 
-.cards {
+.card-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+
 }
 
-.card-list li {
-    flex: 1 1 15rem;
-    display: flex;
+.card {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    max-width: 30%;
+
+    background-color: lightgray;
+
+}
+
+.card svg{
+    background-color: rgb(126, 125, 125);
+    padding: 7px;
+    border-radius: 20px;
+    
 }
 
 
 
 
 .site-foot {
-  color: rebeccapurple;
-  background-color: darkgray;
+  color: rgb(214, 206, 206);
+  background-color: rgb(90, 97, 113);
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding: 0;
-  margin: 0;
   margin-top: 3rem;
 }
