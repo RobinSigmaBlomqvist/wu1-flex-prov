@@ -52,7 +52,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-.card-list {
+.cards-list {
     display: flex;
     flex-direction: row;
     padding: 1rem;
